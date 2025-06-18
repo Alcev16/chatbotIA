@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscoMentor Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            border-bottom: 1px solid #ddd;
+        }
+        .chat-box {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 400px; /* Ajusta esto si necesitas más espacio */
+            min-height: 200px; /* Asegura un tamaño mínimo */
+            border-bottom: 1px solid #eee;
+        }
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .message.user {
+            align-items: flex-end;
+        }
+        .message.chatbot {
+            align-items: flex-start;
+        }
+        .message p {
+            padding: 10px 15px;
+            border-radius: 18px;
+            max-width: 75%;
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+        .message.user p {
+            background-color: #dcf8c6;
+            color: #333;
+            border-bottom-right-radius: 2px;
+        }
+        .message.chatbot p {
+            background-color: #e2e2e2;
+            color: #333;
+            border-bottom-left-radius: 2px;
+        }
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin-right: 10px;
+            font-size: 1em;
+            outline: none;
+        }
+        .chat-input button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .chat-input button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            EscoMentor
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message chatbot">
+                <p>¡Hola! Soy EscoMentor, tu asistente universitario. ¿En qué puedo ayudarte hoy?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Función para añadir un mensaje al chat
+        function addMessage(sender, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            const paragraph = document.createElement('p');
+            paragraph.innerHTML = text; // Permite que las etiquetas HTML (como <a>) sean interpretadas
+            messageDiv.appendChild(paragraph);
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; // Desplazar al final
+        }
+
+        // Función para enviar el mensaje
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (message === '') return; // No enviar mensajes vacíos
+
+            addMessage('user', message); // Añadir mensaje del usuario al chat
+            userInput.value = ''; // Limpiar el input
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+                addMessage('chatbot', data.response); // Añadir respuesta del chatbot al chat
+            } catch (error) {
+                console.error('Error al comunicarse con el chatbot:', error);
+                addMessage('chatbot', 'Lo siento, hubo un error al procesar tu solicitud.');
+            }
+        }
+
+        // Event listener para el botón de enviar
+        sendButton.addEventListener('click', sendMessage);
+
+        // Event listener para la tecla Enter en el input
+        userInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Enfocar el input al cargar la página
+        window.onload = () => {
+            userInput.focus();
+        };
+    </script>
+</body>
+</html>
