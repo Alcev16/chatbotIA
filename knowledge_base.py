@@ -52,7 +52,7 @@ knowledge_base = [
     {
     "pregunta" : "¿ESCOM ofrece becas?",
     "palabras_clave" : ["beca", "becas", "apoyo", "apoyos", "ayuda", "económica", "financiera", "institucional", "excelencia", "telmex", "convocatoria", "solicitar", "obtener", "beneficio"],
-    "respuesta" : "¡Sí! ESCOM ofrece tres tipos de beca institucional y la beca de excelencia de Telmex, entre otras. Las convocatorias se publican al inicio del semestre. Para más información, accede al siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
+    "respuesta" : "¡Sí! ESCOM ofrece tres tipos de beca institucional,la beca de excelencia de Telmex, la de transporte y becas tanto culturales como deportivas. Las convocatorias se publican al inicio del semestre. Para más información, accede al siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
     "categoria": "Becas y Apoyos"
     },
     {
@@ -61,6 +61,31 @@ knowledge_base = [
     "respuesta" : "ESCOM se encuentra en la siguiente dirección. Puedes llegar en metro (estación Politécnico de la Línea 5), la Línea 8 del trolebús o una de las rutas de autobús cercanas. Puedes acceder a más información <a href='https://www.escom.ipn.mx/htmls/conocenos/ubicacion.php' target='_blank'>aquí</a>.",
     "categoria": "Ubicación"  
     },
+    {
+    "pregunta" : "¿En qué consiste la beca institucional?",
+	"palabras_clave" : ["baca institucional","beca","promedio"],
+	"respuesta" : "La beca institucional es para alumnos regulares y hay tres tipos dependiendo del promedio:  <br><img src='/static/images/BecaInstitucional.png' alt='Tabla de la Beca Institucional' style='max-width:150px; height:auto; display:block; margin-top:10px;'><br>Para más información, accede al siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
+	"categoría" : "Becas",
+    },
+    {
+	"pregunta" : "¿En qué consiste la beca TELMEX?",
+	"palabras_clave" : ["beca","beca TELMEX", "beca telmex", "telmex", "TELMEX"],
+	"respuesta" : "Esta beca es dada a alumnos regulares de entre tercer y octavo semestre por la compañía TELMEX. Tiene los siguientes requisitos: <br><ol><li>Ser alumno de 3° a 8° semestre</li><li>Tener un promedio mínimo de 8.5</li><li>Comprobante de actividad extracurricilar.</li></ol><br><br>Para más información, accede al siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
+	"categoría" : "Becas",
+    },
+    {
+	"pregunta" : "=Como se solicita una beca?",
+	"palabras_clave" : ["solicitud","beca", "solicitud de beca", "proceso","proceso de solicitud","convocatoria"],
+	"respuesta" : "Primero deberás esperar a la publicación de la convocatoria, suele salir durante los primeros dos meses del semestre, así que te recomendamos estar al pendiente de las redes sociales de <a href=https://web.facebook.com/escomipnmx/?locale=es_LA&_rdc=1&_rdr# target='_blank'>ESCOM</a> y la <a href= https://www.facebook.com/IPNDAES target='_blank'>Dirección de Apoyo a Estudiantes del IPN</a>. Después de eso deberás de registraste en el <a href=https://www.sibec.ipn.mx/registro/accesoRegistro.action target='_blank'>SIBec</a> y completar el estudio socioeconómico durante las fechas de la convocatoria. Por último, deberás de entregar la documentación que te solicite la conovcatoria y esperar a los resultados. Si no obtienes la beca tienes derecho a la Reconsideración en los días próximos, deberás de estar al pendiente de la publicación, puesto que también está limitado por fechas. Si quieres revisar el proceso más a detalle puedes consultar el siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
+	"categoría" : "Becas",
+	},
+    {
+	"pregunta" : "¿En qué consiste la beca de transporte?",
+	"palabras_clave" : ["Beca","beca","transporte","beca de transporte"],
+	"respuesta" : "La beca de transporte pretende ayudar a alumnos que gastan más de 500 pesos mensuales en transporte. Se requiere de un comprobate de costos para recibir un monto de 200 pesos mensuales.<br>Para más información, accede al siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/escomunidad/becas.php' target='_blank'>Portal de Becas de ESCOM</a>",
+	"categoría" : "Becas",
+	},
+	
 ]
 
 default_response = "Lo siento, por el momento no puedo responder la pregunta. Puedes consultar en el sitio web oficial de ESCOM o sus redes sociales para encontrar más información."
