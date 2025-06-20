@@ -130,7 +130,7 @@ knowledge_base = [
     {
 	"pregunta" : "¿Cuál es el plan de estudios de la Licenciatura en Ciencia de Datos?",
 	"palabras_clave" : ["Licenciatura en Ciencia de Datos","LCD"],
-	"respuesta" : "Puedes consultar el plan de estudios de la Licenciatura en Ciencia de Datos en el siguiente enlace: <a href=https://www.escom.ipn.mx/htmls/oferta/mapaCurrLCD2020.php target='_blank'> Plan de la Licenciatura en Ciencia de Datos</a>.<br> También puedes consultar más información de esta carrera en el siguiente enlace: <a href=https://www.escom.ipn.mx/htmls/oferta/iia2020.phphttps://www.escom.ipn.mx/htmls/oferta/lcd2020.php target='_blank'>Licenciatura en Ciencia de Datos (Oferta Educativa)</a>.<br> También puedes consultarlo en formato PDF <a href='/static/docs/mapaCurricularLCD2020H.pdf' target='_blank'>aquí.",
+	"respuesta" : "Puedes consultar el plan de estudios de la Licenciatura en Ciencia de Datos en el siguiente enlace: <a href=https://www.escom.ipn.mx/htmls/oferta/mapaCurrLCD2020.php target='_blank'> Plan de la Licenciatura en Ciencia de Datos</a>.<br> También puedes consultar más información de esta carrera en el siguiente enlace: <a href='https://www.escom.ipn.mx/htmls/oferta/lcd2020.php' target='_blank'>Licenciatura en Ciencia de Datos (Oferta Educativa)</a>.<br> También puedes consultarlo en formato PDF <a href='/static/docs/mapaCurricularLCD2020H.pdf' target='_blank'>aquí.",
 	"categoría" : "Planes Académicos",
 	},
     {
@@ -144,6 +144,90 @@ knowledge_base = [
 	"palabras_clave" : ["medios de transporte","llegada","llegar","cómo"],
 	"respuesta" : "Puedes llegar en Metro (Estación Politécnico--Linea 5), en Metrobús (Estacion Instituto Politecnico Nacional--Linea 6) o Trolebús (Parada ESCOM--Linea 8) ",
 	"categoría" : "Ubicación",
+	},
+    {
+	"pregunta" : "¿Cuáles son las redes sociales de ESCOM?",
+	"palabras_clave" : ["redes sociales","facebook", "twitter","x","instagram"],
+	"respuesta" : "Puedes encontrar a ESCOM en las siguientes redes sociales: <br><ul><li><a href=https://web.facebook.com/escomipnmx/?locale=es_LA&_rdc=1&_rdr# target='_blank'>Facebook</a></li><a href=https://x.com/escomunidad target='_blank'>X(antes Twitter)</a><li><a href=https://www.instagram.com/escom_ipn_mx/?utm_source=ig_embed&ig_rid=9249bb21-a724-420c-be0d-0c9000c46013 target='_blank'>Instagram</a></li></ul>",
+	"categoría" : "Ubicación",
+	},
+    {
+	"pregunta" : "¿Cuáles clubes existen en ESCOM?",
+	"palabras_clave" : ["club","clubes"],
+	"respuesta" : "En la página oficial de ESCOM puedes encontrar 6 clubes:<br><ul><li><a href=https://www.facebook.com/CMR.ESCOM/ target='_blank'>Club de Minirobótica</a></li><a href=https://www.facebook.com/algoritmiaescom/ target='_blank>Club de Algoritmia</a><li><a href=https://www.comunidad.escom.ipn.mx/biorobotica/ target='_blank>Club de Bio-Robótica</a></li><a href=https://web.facebook.com/profile.php?id=100063692365456&locale=es_LA target='blank'>Developer Student Club</a><li></li><a href=https://www.facebook.com/CSI.ESCOM.oficial target='_blank>Club de Seguridad y Hacking Ético</a><li><a href=https://www.instagram.com/weare_tukey/# target='_blank>Club de Ciencia Datos</a></li></ul><br>Sin embargo, existen otros clubes que no se encuentran en la página oficial de ESCOM, esto suele ocurrir ya sea porque son clubes más nuevos o clubes que no cuentan con un profesor encargado de manera oficial. Te recomendamos revisar en los diferentes grupos de Facebook de la escuela y los carteles que puedas ver en la escuela, seguro que hay algún club que te interesa.<br>ESCOM también tiene actividades culturales y deportivas que son aparte de los clubes.",
+	"categoría" : "Vida Universitaria",
+	},
+    {
+	"pregunta" : "¿Cómo puedo ingresar a un club?",
+	"palabras_clave" : ["ingresar","club","registro"],
+	"respuesta" : "Al inicio del semestre se publica un formulario para que te puedas unir a los clubes en las redes sociales de ESCOM. Por norma general, no hay requisitos de entrada, pero ciertos clubes, como el de Algoritmia te harán un examen de ingreso. Te recomendamos acercarte al club al que desees unirte para preguntarles directamente.",
+	"categoría" : "Vida Universitaria",
+	},
+    {
+    "pregunta" : "¿Dónde puedo encontrar la biblioteca?",
+    "palabras_clave" : ["biblioteca", "ubicación", "donde", "encontrar", "plano", "mapa", "croquis", "edificio", "gobierno"],
+    "respuesta" : "La biblioteca se encuentra en la planta baja del Edificio de Gobierno. Aquí tienes el croquis del edificio: <a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edifGobierno.png' target='_blank'>Croquis del Edificio de Gobierno</a>.",
+    "categoria" : "Instalaciones"
+    },
+    {
+	"pregunta" : "¿Que debo hacer si pierdo mi credencial de estudiante?",
+	"palabras_clave" : ["perdí","pérdida","credencial","reponer"],
+	"respuesta" : "Debes acudir a una ventanilla de Gestión Escolar y solicitar una reposición, ten en cuenta que se te hará un cobro por la reposición y tardará de 2 a 5 dias habiles la entrega de tu credencial.",
+	"categoría" : "Trámites",
+	},
+    {
+	"pregunta" : "¿Dónde está el servicio médico?",
+	"palabras_clave" : ["servicio médico","donde",],
+	"respuesta" : "El Servicio Médico de ESCOM se encuentra en la planta baja del Edificio de Gobierno, en la misma habitación que el Servicio de Odontología. Aquí tienes el croquis del edificio: <a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edifGobierno.png' target='_blank'>Croquis del Edificio de Gobierno</a>.",
+	"categoría" : "Servicios Estudiantiles",
+	},
+    {
+	"pregunta" : "¿Dónde está el servicio de odontología?",
+	"palabras_clave" : ["odontología","dónde","ubicación", "en dónde"],
+	"respuesta" : "El Servicio de Odontología de ESCOM se encuentra en la planta baja del Edificio de Gobierno, en la misma habitación que el Servicio Médico. Aquí tienes el croquis del edificio: <a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edifGobierno.png' target='_blank'>Croquis del Edificio de Gobierno</a>.",
+	"categoría" : "Servicios Estudiantiles",
+	},
+    {
+	"pregunta" : "¿Cuál es el mapa de ESCOM?",
+	"palabras_clave" : ["mapa","croquis","ubicación","edificios","instalaciones","escom"],
+	"respuesta" : "ESCOM está dividido en 7 edificios, y tiene otras instlaciones como zonas de estudio (conocidas como palapas), zonas deportivas, cafeterías y papelerías. Aquí está el mapa: <a href='https://pbs.twimg.com/media/FpOHuWdXgAAp8EN?format=jpg&name=4096x4096' target='_blank'>Mapa de ESCOM</a>.<br>Si te pierdes o no encuentras un salón en específico no dudes en preguntar a algún profesor o otro alumno, la comunidad de ESCOM es siempre muy agradable y no dudarán en ayudarte.",
+	"categoría" : "Instalaciones",
+	},
+    {
+    "pregunta" : "¿Dónde está mi salón?",
+    "palabras_clave" : ["salón", "salones", "donde", "clases", "salón de clase", "salones de clase", "ubicación", "edificio", "aulas", "localizar", "encontrar", "croquis", "mapa"],
+    "respuesta" : "Las clases se imparten en los edificios del 1 al 5. Puedes revisar en qué edificio se encuentra tu salón con el siguiente croquis general del campus: <a href='https://pbs.twimg.com/media/FpOHuWdXgAAp8EN?format=jpg&name=4096x4096' target='_blank'>Mapa General de ESCOM</a>.<br><br>Por norma general, los alumnos de ISC toman clases en los edificios 1 y 2. Los alumnos de IIA y LCD tienen clases en los edificios 3, 4 y 5. Aquí están los croquis de cada edificio para que te ubiques mejor:<br><ul><li><a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edificio1.png' target='_blank'>Croquis del Edificio 1</a></li><li><a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edificio2.png' target='_blank'>Croquis del Edificio 2</a></li><li><a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edificio3.png' target='_blank'>Croquis del Edificio 3</a></li><li><a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edificio4.png' target='_blank'>Croquis del Edificio 4</a></li><li><a href='https://www.escom.ipn.mx/docs/conocenos/ubicacion/croquisESCOM2022_edificio5.png' target='_blank'>Croquis del Edificio 5</a></li></ul>",
+    "categoria" : "Instalaciones"
+    },
+    {
+	"pregunta" : "¿Cuáles son las actividades culturales?",
+	"palabras_clave" : ["actividades culturales","actividades","culturales","cultura","arte","artísticas","artística"],
+	"respuesta" : "Las actividades culturales que ofrece ESCOM son: <br><ul><li>Artes Plásticas</li><li>Creación literaria</li><li>Teatro</li><li>Tuna ESCOM (similar a la estudiantina)</li><li>Algoritmo de Baile</li><li>Club de Anime.</li></ul><br>Para más información sobre las actvidades culturales puedes acceder al siguiente enlace: <a href='https://www.escom.ipn.mx/SSEIS/serviciosestudiantiles/servicios/actsCulturales.php' target='_blank'>Actividades Culturales.</a>",
+	"categoría" : "Vida Universitaria",
+	},
+    {
+	"pregunta" : "¿Quién es la persona encargada de las actividades culturales?",
+	"palabras_clave" : ["actividades culturales","encargado","responsable","persona encargada","persona a cargo","culturales"],
+	"respuesta" : "Si tienes más dudas con las actividades culturales la persona encargada es el Lic. Álvaro Olvera Toral. Lo puedes contactar a través del siguiente número telefónico: 57296000 Ext. 52063, o al siguiente correo: <a href='mailto:cultura_y_deportes_escom@ipn.mx'>cultura_y_deportes_escom@ipn.mx</a>",
+	"categoría" : "Vida Universitaria",
+	},
+    {
+	"pregunta" : "¿Cuáles son las actividades deportivas?",
+	"palabras_clave" : ["actividades deportivas","deporte","actividad","deportes","competencia","ofrece","cuales"],
+	"respuesta" : "Las actividades deportivas que ofrece ESCOM son: <ul><li>Fútbol: soccer, siete y rápido</li><li>Voleibol</li><li>Taekwondo</li><li>Ajedrez</li><li>Barras</li><li>Basquetbol</li><li>Ping Pong</li><li>Tochito Bandera</li></ul><br>Las actividades deportivas ofrecidas por ESCOM se dividen en formato varonil y femenil.",
+	"categoría" : "Vida Universitaria",
+	},
+    {
+	"pregunta" : "¿Quién es la persona encargada de las actividades deportivas?",
+	"palabras_clave" : ["actividades deportivas","encargado","responsable","persona encargada","persona a cargo","deportivas"],
+	"respuesta" : "Si tienes más dudas con las actividades deportivas la persona encargada es el Lic. Álvaro Olvera Toral. Lo puedes contactar a través del siguiente número telefónico: 57296000 Ext. 52063, o al siguiente correo: <a href='mailto:cultura_y_deportes_escom@ipn.mx'>cultura_y_deportes_escom@ipn.mx</a>",
+	"categoría" : "Vida Universitaria",
+	},   
+    {
+	"pregunta" : "¿Quién es la persina encargada del servicio médico?",
+	"palabras_clave" : ["servicio médico","encargado","persona responsable","persona encargada","persona a cargo","médico"],
+	"respuesta" : "Si tienes más dudas del servicio médico te puedes poner en contacto con alguno de los doctores responsables en tu turno. Si estás en el turno matutino los doctores encargados son: la Dra. Aideé Lizbeth Galván Zermeño y el Dr. Daniel Mauricio Temozihui Trejo. Si por el contrrio, estás en el turno vespertino los doctores encargados son: el Dr. Óscar Cortés Jiménez y el Dr. Cuauhtémoc Garcóa Hidalgo. Puedes ponerte en contacto con el servicio médico a través del siguiente número telefónico: 57296000 Ext. 52014, ten en cuenta que el horario es a partir de las 8 de la mañana y hasta las 3 de la tarde en el turno matutino y de las 4 de la tarde a las 8 de la noche en el turno vespertino. ",
+	"categoría" : "",
 	},
 ]
 
